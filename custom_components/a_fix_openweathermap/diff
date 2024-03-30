@@ -1,4 +1,4 @@
-diff --git a/openweathermap/sensor.py b/openweathermap/sensor.py
+iff --git a/openweathermap/sensor.py b/openweathermap/sensor.py
 index a1e0e9d..6017467 100644
 --- a/openweathermap/sensor.py
 +++ b/openweathermap/sensor.py
@@ -17,14 +17,6 @@ diff --git a/openweathermap/weather.py b/openweathermap/weather.py
 index bf1ae5c..8c055ec 100644
 --- a/openweathermap/weather.py
 +++ b/openweathermap/weather.py
-@@ -16,6 +16,7 @@ from homeassistant.components.weather import (
-     ATTR_FORECAST_PRECIPITATION_PROBABILITY,
-     ATTR_FORECAST_TIME,
-     ATTR_FORECAST_WIND_BEARING,
-+    ATTR_FORECAST,
-     Forecast,
-     SingleCoordinatorWeatherEntity,
-     WeatherEntityFeature,
 @@ -63,6 +64,7 @@ from .const import (
      FORECAST_MODE_DAILY,
      FORECAST_MODE_ONECALL_DAILY,
@@ -37,7 +29,7 @@ index bf1ae5c..8c055ec 100644
      ATTR_API_FORECAST_CLOUDS: ATTR_FORECAST_CLOUD_COVERAGE,
      ATTR_API_FORECAST_HUMIDITY: ATTR_FORECAST_HUMIDITY,
      ATTR_API_FORECAST_FEELS_LIKE_TEMPERATURE: ATTR_FORECAST_NATIVE_APPARENT_TEMP,
-+    ATTR_API_WEATHER: ATTR_FORECAST,
++    ATTR_API_WEATHER: "weather",
  }
  
  
